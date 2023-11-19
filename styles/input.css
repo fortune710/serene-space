@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mood-chip {
+    @apply px-3 py-1 bg-zinc-800 text-white rounded-3xl
+}
+
+.mood-chip-selected {
+    @apply px-3 py-1 bg-white border border-zinc-800 text-zinc-800 rounded-3xl
+}
+
+.result-item {
+    @apply flex items-center justify-between w-full
+}
+
+.text-transform {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.font-big {
+    font-family: 600;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+dialog::backdrop {
+  opacity: 0.75;
+}
+
+.no-y-padding {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

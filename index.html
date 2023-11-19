@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Document</title>
+</head>
+<body class="font-sans">
+    <header class="flex items-center h-16 px-7">
+        <nav class="w-full flex items-center justify-between">
+            <img width="50px" height="50px" src="/assets/serene-space-logo.png" alt="serene-space-logo">
+
+            <div class="md:flex items-center gap-4 hidden">
+                <a href="#features">Features</a>
+                <a href="#mood-tracker">Mood Tracker</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+
+            <button class="bg-primary px-4 py-2 rounded-[80px] text-white font-semibold">
+                CONTACT US
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-light-green min-h-[80dvh] md:h-[100dvh] flex flex-col-reverse md:flex-row items-center rounded-t-2xl">
+            <div class="w-full md:w-3/5 p-2 lg:p-8">
+
+                <div>
+                    <h2 class="font-semibold text-3xl md:text-5xl lg:text-6xl">
+                        Discover Calm.
+                    </h2>
+                    <h2 class="font-semibold text-3xl md:text-5xl lg:text-6xl">
+                        Discover You.
+                    </h2>
+                </div>
+
+                <p class="text-xl lg:text-2xl mt-2">
+                    Therapy that works because we make it work for you
+                </p>
+
+                <button class="bg-primary px-5 py-4 mt-6 rounded-[70px] text-white font-semibold">
+                    BOOK AN APPOINTMENT
+                </button>
+            </div>
+            <div>
+                <img class="w-[280px] h-[280px] lg:w-[500px] lg:h-[500px]" src="/assets/Psychologist-rafiki.svg" alt="pschologist">
+            </div>
+        </section>
+
+        <section id="features" class="bg-dark text-white min-h-[60dvh] px-4 py-6 lg:py-0 lg:px-[100px] flex flex-col gap-6 lg:gap-0 justify-between lg:items-center lg:flex-row">
+            <div>
+                <h2 class="font-semibold text-3xl md:text-2xl lg:text-3xl">
+                    Our Features
+                </h2>
+                <p>
+                    Here's how Serene Space is bringing the best of therapy to you
+                </p>
+                <a class="font-semibold text-lg flex items-center gap-2 mt-5">
+                    SPEAK TO OUR EXPERTS
+                    <img width="20px" height="13px" src="/assets/arrow-right-solid (1).svg"/>
+                </a>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div class="flex items-baseline gap-2">
+                    <img width="20px" height="20px" class="-pb-2" src="assets/bolt-solid (1).svg"/>
+                    <div>
+                        <h2 class="font-semibold text-lg md:text-xl lg:text-2xl">
+                            Clinically proven to help people see changes faster
+                        </h2>
+                        <p>
+                            Our data shows that clients typically see results in less than 
+                            6 sessions - that&apos;s less than 2 months
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-baseline gap-2 mt-5">
+                    <img width="20px" height="20px" src="assets/shield-solid.svg"/>
+                    <div>
+                        <h2 class="font-semibold text-lg md:text-xl lg:text-2xl">
+                            Secure and anonymous
+                        </h2>
+                        <p>
+                            We comply with all laws related to medical secrecy, and all information
+                            is kept confidential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="mood-tracker" class="md:h-[80dvh] min-h-[40dvh] py-3 flex flex-col justify-center gap-5">
+            <h3 class="font-semibold text-xl md:text-2xl lg:text-3xl text-center">
+                How are you feeling today?
+            </h3>
+
+            <div class="flex items-center w-full justify-evenly">
+                <button class="mood-icon" id="angry">
+                    <img class="mood-icon" src="assets/icons8-angry-96.png" alt="">
+                </button>
+
+                <button class="mood-icon" id="sad">
+                    <img class="mood-icon" src="assets/icons8-sad-96.png" alt="">
+                </button>
+
+                <button class="mood-icon" id="neutral">
+                    <img class="mood-icon" src="assets/icons8-neutral-96.png" alt="">
+                </button>
+                
+                <button class="mood-icon" id="happy">
+                    <img class="mood-icon" src="assets/icons8-smile-96.png" alt="">
+                </button>
+
+                <button class="mood-icon" id="excited">
+                    <img src="assets/icons8-smile-96 (1).png" alt="">
+                </button>
+            </div>
+
+        </section>
+
+        <section class="bg-light-brown text-dark min-h-[70dvh] px-4 py-9 lg:py-0 lg:px-[100px] flex flex-col justify-center">
+            <h3 class="font-semibold text-3xl md:text-2xl lg:text-5xl">
+                How it works
+            </h3>
+
+            <div class="w-full mt-4 md:mt-6 lg:mt-9 gap-7 grid grid-cols-1 lg:grid-cols-3">
+                <div class="border border-dark rounded-lg box-border p-8">
+                    <img width="35px" height="35px" class="mb-6" src="/assets/message-solid.svg" alt="message">
+                    <h4 class="font-semibold text-2xl">
+                        Answer a few questions
+                    </h4>
+                    <p class="text-lg">Tell us a little about what you're looking for</p>
+                </div>
+
+                <div class="border border-dark rounded-lg box-border p-8">
+                    <img width="35px" height="35px" class="mb-6" src="/assets/bell-solid.svg" alt="message">
+                    <h4 class="font-semibold text-2xl">
+                        Receive your matches
+                    </h4>
+                    <p class="text-lg">
+                        We will match you with a number of local therapists in your area
+                    </p>
+                </div>
+
+                <div class="border border-dark rounded-lg box-border p-8">
+                    <img width="32px" height="32px" class="mb-6" src="/assets/file-solid.svg" alt="message">
+                    <h4 class="font-semibold text-2xl">
+                        Make an appointment
+                    </h4>
+                    <p class="text-lg">
+                        Schedule an in-person or virtual meeting with your therapist
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="text-dark h-[60dvh] px-4 py-6 md:my-0 lg:px-16 flex flex-col-reverse md:flex-row items-center justify-between">
+            <div>
+                <h3 class="font-semibold text-3xl">
+                    Get a free consultation with a therapist right now
+                </h3>
+
+                <button class="bg-primary px-5 py-4 rounded-[70px] mt-5 text-white font-semibold">
+                    MEET WITH A THERAPIST
+                </button>
+            </div>
+
+            <div>
+                <img class="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]" src="/assets/Mental health-rafiki.svg" alt="mental health">
+            </div>
+        </section>
+
+        <section id="testimonials" class="bg-light-blue text-dark min-h-[60dvh] no-y-padding flex flex-col lg:flex-row items-center relative">
+            <div class="absolute top-5 left-5 md:top-[50px] md:left-[50px]">
+                <h1 class="font-bold text-6xl font-sans">"</h1>
+            </div>
+            <div class="slideshow-container z-10 pt-20 px-4 box-border lg:px-0 lg:pt-0">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides text-dark">
+                    <h5 class="font-semibold text-2xl lg:text-2xl">
+                        Serene Space has been a beacon of light in my journey to overcome anxiety. 
+                        The supportive community and resources helped me find inner peace and build 
+                        resilience. Grateful for the newfound serenity in my life.
+                    </h5>
+                    <h5 class="font-medium lg:text-lg mt-3 lg:mt-3">Sarah</>
+                </div>
+              
+                <div class="mySlides fade">
+                    <h3 class="font-semibold text-2xl lg:text-2xl">
+                        I struggled with stress and burnout until I stumbled upon Serene Space. 
+                        The platform's mindfulness exercises and expert guidance have transformed 
+                        my life. I now manage stress better and live a more balanced, fulfilling life.                    
+                    </h3>
+                    <p class="font-medium lg:text-lg mt-3 lg:mt-3">Jason</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <h3 class="font-semibold text-2xl lg:text-2xl">
+                        Dealing with depression was a daily battle until I found Serene Space. The 
+                        compassionate community and therapeutic tools provided a safe space for me to heal. 
+                        Today, I am on a journey of self-discovery and embracing joy. 
+                    </h3>
+                    <p class="font-medium lg:text-lg mt-3 lg:mt-3">Emily</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <h3 class="font-semibold text-2xl lg:text-2xl">
+                        Living with PTSD, I felt isolated and overwhelmed. Serene Space became my 
+                        refuge. The personalized resources and supportive community helped me navigate 
+                        my healing journey. It's more than a website; it's a lifeline.                    
+                    </h3>
+                    <p class="font-medium lg:text-lg mt-3 lg:mt-3">Alex</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <h3 class="font-semibold text-2xl lg:text-2xl">
+                        As someone who struggled with insomnia and its impact on my mental health, 
+                        Serene Space became a game-changer. The sleep tools and relaxation techniques 
+                        have not only improved my sleep but also brought tranquility to my daily life.                    
+                    </h3>
+                    <p class="font-medium lg:text-lg mt-3 lg:mt-3">Chris</p>
+                </div>
+
+  
+              
+            </div>
+            <div class="lg:h-full h-24 w-full lg:w-20 flex lg:flex-col flex-row">
+                <!-- Next and previous buttons -->
+                <button class="prev w-1/2 lg:w-full h-full lg:h-1/2" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next w-1/2 lg:w-full h-full lg:h-1/2" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+              
+        </section>
+    </main>
+
+    <dialog class="backdrop:bg-zinc-800/75 w-[250px] md:w-[500px] p-4 rounded-md">
+        <h2 class="font-semibold text-xl md:text-2xl" style="text-transform: capitalize;" id="mood-title"></h2>
+
+        <div class="my-3">
+            <h3 class="font-semibold text-lg md:text-xl">Tell us about your emotions...</h3>
+            <p class="font-medium md:text-lg">Pick up to 3 emotions</p>
+        </div>
+
+        <section class="w-full">
+            <h4 class="font-semibold text-lg md:text-xl">Positive Emotions</h4>
+            <div id="postive-moods" class="flex items-center my-2 gap-2 flex-wrap"></div>
+        </section>
+
+        <section class="w-full">
+            <h4 class="font-semibold text-lg md:text-xl">Negative Emotions</h4>
+            <div id="negative-moods" class="flex items-center my-2 gap-2 flex-wrap"></div>
+        </section>
+
+        <div class="w-full flex items-center justify-end gap-3">
+            <button class="font-semibold" onclick="closeModal()">Close</button>
+            <button class="text-primary font-semibold" onclick="returnEmotionScore()">
+                Continue
+            </button>
+        </div>
+    </dialog>
+
+    <dialog class="backdrop:bg-zinc-800/75 w-[250px] md:w-[500px] p-4 rounded-md">
+        <h2 class="font-semibold text-xl md:text-2xl">
+            Mood Score
+        </h2>
+
+        <div id="mood-score" class="w-full my-4"></div>
+
+        <div class="w-full flex items-center justify-end gap-3">
+            <button class="font-semibold" onclick="closeResultModal()">Close</button>
+        </div>
+
+    </dialog>
+    
+    <footer class="">
+
+    </footer>
+    
+    <script src="mood-calculator.js"></script>
+</body>
+</html>
